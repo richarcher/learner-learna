@@ -3,7 +3,13 @@
   "version": "0.0.3",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "node ./lib/beta-pkg.js"
+    "lint": "eslint -f codeframe \"**/*.js\"",
+    "start": "node ./lib/beta-pkg.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "@shared/eslint-config": "^0.0.0",
+    "eslint": "^7.29.0",
+    "lint-staged": "^11.0.0"
   }
 }

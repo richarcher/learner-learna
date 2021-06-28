@@ -1,5 +1,5 @@
 'use strict';
 
-const date = new Date()
+const date = new Date();
 
-console.log(`Alpha Hello - the time is ${date}!`)
+console.log(`Alpha Hello - the time is ${date}!`);

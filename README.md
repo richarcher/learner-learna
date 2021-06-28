@@ -16,6 +16,11 @@
   * finding: running `npm lerna version` at this point returned nothing - "No changed packages to version"
 * [ ] make a change to just one package, push and version.
   * finding: `npx lerna version` will bump ALL packages to the latest.
+* [x] lerna create a shared eslint configuration package that all other packages can use
+  * created a @shared/eslint-config package - purely for sharing a config internally
+  * added a lint script to each *-pkg package
+  * added eslint to the same packages (internal dev dependencies only)
+  * added an npm script to root that would call `lerna run lint` on all packages that can run that
 * [ ] lerna create a (private) "common" package (this idea is to import a file or 2 from here into alpha/beta)
 * [ ] for now keep all dependencies within each package (no hoisting)
 * [ ] ensure common is a dependency of alpha/beta
