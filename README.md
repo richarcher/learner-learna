@@ -1,8 +1,9 @@
 # Learner Lerna
 
-
-## Steps taken:
-
+<details>
+<summary>Steps taken:</summary>
+ 
+ 
 * [x] new NPM app
 * [x] install lerna as Dev Dependency
 * [x] git init
@@ -32,6 +33,9 @@
 * [x] ensure common is a dependency of alpha/beta
 * [/] understand what lerna publish/version/changed
 
+ 
+</details>
+ 
 ## Main takeaways
 
 * shared packages are nice. appears that a naming convention of `@package/sub-package` makes things easier to reference one aother internally.
