@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "lint": "eslint -f codeframe \"**/*.js\"",
-    "start": "node ./lib/beta-pkg.js",
+    "start": "node ./index.js",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {

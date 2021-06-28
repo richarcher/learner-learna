@@ -1,5 +1,5 @@
 'use strict';
 const todayDate = require('@shared/today-date');
 
-console.log('Beta Hello!');
-console.log(todayDate().toString());
+console.log('Alpha Hello!');
+console.log(todayDate());
