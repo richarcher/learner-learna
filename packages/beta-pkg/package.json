@@ -11,5 +11,8 @@
     "@shared/eslint-config": "^4.0.29618",
     "eslint": "^7.29.0",
     "lint-staged": "^11.0.0"
+  },
+  "dependencies": {
+    "@shared/today-date": "^4.0.29618"
   }
 }
