@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "ROOT",
+      "path": "."
+    },
+    {
+      "path": "packages/alpha-pkg"
+    },
+    {
+      "path": "packages/beta-pkg"
+    },
+    {
+      "path": "packages/eslint-config"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules/**": true,
+      "packages/*/*": true
+    }
+  }
+}
