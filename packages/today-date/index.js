@@ -3,5 +3,6 @@
 module.exports = todayDate;
 
 function todayDate() {
-  return new Date();
+  const date = new Date();
+  return `The time and date is ${date}!`;
 }
