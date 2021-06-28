@@ -27,11 +27,22 @@
   * added a lint script to each *-pkg package
   * added eslint to the same packages (internal dev dependencies only)
   * added an npm script to root that would call `lerna run lint` on all packages that can run that
-* [ ] lerna create a (private) "common" package (this idea is to import a file or 2 from here into alpha/beta)
-* [ ] for now keep all dependencies within each package (no hoisting)
-* [ ] ensure common is a dependency of alpha/beta
-* [ ] understand what lerna publish/version/changed
+* [x] lerna create a (private) "common" package (this idea is to import a file or 2 from here into alpha/beta)
+* [x] for now keep all dependencies within each package (no hoisting)
+* [x] ensure common is a dependency of alpha/beta
+* [/] understand what lerna publish/version/changed
 
+## Main takeaways
+
+* shared packages are nice. appears that a naming convention of `@package/sub-package` makes things easier to reference one aother internally.
+* `lerna publish` is not something we currently want to do.
+* `lerna version patch` is something we want to do on every merge to master. [Other useful versioning commands](https://github.com/lerna/lerna/blob/main/commands/version/README.md)
+* tagging/versioning in Lerna is EVERYTHING. We do this already, so no bad thing. Every deploy to main/master we patch version and add a git tag.
+* with the tags we can do things like understand which packages have changed since the last tag, and only build those packages
+* `npx lerna changed -a` is the magic sauce that provides us with a list of packages to care about each deploy
+* in the case where a dependant package is changed, all packages that depend upon that are also listed as changed - so a PR that would affect Piñata would result in a redeploy of any packages that use it. This is a Good Thing.
+
+![this. is. everything.](./assets/changed.png)
 
 ## Interesting things
 
