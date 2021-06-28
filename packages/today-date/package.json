@@ -1,6 +1,6 @@
 {
   "name": "@shared/today-date",
-  "version": "4.0.29619",
+  "version": "4.0.29620",
   "description": "gives today's date",
   "private": true,
   "main": "index.js",
