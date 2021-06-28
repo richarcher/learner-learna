@@ -2,4 +2,5 @@
 
 const date = new Date()
 
-console.log(`Alpha Hello - the time is ${date}!`)
+console.log('Alpha Hello!');
+console.log(`The time and date is ${date}!`)
