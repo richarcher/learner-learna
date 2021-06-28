@@ -1,7 +1,7 @@
 {
   "name": "beta-pkg",
   "version": "0.0.2",
-  "private": "true",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "start": "node ./lib/beta-pkg.js"

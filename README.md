@@ -15,6 +15,7 @@
   * finding: this was made to both alpha and beta packages
   * finding: running `npm lerna version` at this point returned nothing - "No changed packages to version"
 * [ ] make a change to just one package, push and version.
+  * finding: `npx lerna version` will bump ALL packages to the latest.
 * [ ] lerna create a (private) "common" package (this idea is to import a file or 2 from here into alpha/beta)
 * [ ] for now keep all dependencies within each package (no hoisting)
 * [ ] ensure common is a dependency of alpha/beta
